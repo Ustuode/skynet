@@ -130,7 +130,7 @@ main(int argc, char *argv[]) {
 	skynet_globalinit();
 	skynet_env_init();
 
-	sigign();
+	sigign();//屏蔽信号SIGPIPE，防止系统发送突然退出
 
 	struct skynet_config config;
 
